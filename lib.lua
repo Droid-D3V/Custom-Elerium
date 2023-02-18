@@ -923,7 +923,7 @@ local function ripple(button, x, y)
 end
 
 local windows = 0
-_G.library = {}
+getgenv().library = {}
 
 local function format_windows()
 	local ull = Prefabs:FindFirstChild("UIListLayout"):Clone()
